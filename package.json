@@ -1,0 +1,24 @@
+{
+  "name": "hoornuilbot",
+  "version": "1.0.0",
+  "description": "\"# hoornuil-discord-bot\"",
+  "main": "hoornuil.js",
+  "dependencies": {
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paatsi/hoornuil-discord-bot.git"
+  },
+  "author": "paatsi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paatsi/hoornuil-discord-bot/issues"
+  },
+  "homepage": "https://github.com/Paatsi/hoornuil-discord-bot#readme"
+}
