@@ -14,7 +14,7 @@ client.on('ready', () => {
 client.login(process.env.CLIENT_TOKEN)
 
 client.on('messageCreate', (msg) => {
-	if (msg.content.includes('!w') && !msg.author.bot) {
+	if (msg.content.startsWith('!w') && !msg.author.bot) {
 		const zipCode = msg.content.split(' ')[1]
 		if (
 			zipCode === undefined ||
@@ -51,5 +51,13 @@ client.on('messageCreate', (msg) => {
 					}
 				})
 		}
+	} else if (msg.content.startsWith('!roll')) {
+		const range = parseInt(msg.content.split(' ')[1])
+		if (isNaN(range) || range <= 0) {
+			msg.channel.send('Tarkista numero!').catch(console.error)
+			return
+		}
+		const roll = Math.floor(Math.random() * range) + 1
+		msg.channel.send(`Rolling 1 - ${range}\nRolled: ${roll}`)
 	}
 })
