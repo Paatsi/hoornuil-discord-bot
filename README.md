@@ -30,3 +30,5 @@ Command:
 Rolling 1 - 100
 
 Rolled: 89
+
+The name of the bot was inspired by a bookmark I received as a present.
