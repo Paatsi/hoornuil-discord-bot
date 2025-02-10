@@ -1,5 +1,5 @@
 # hoornuil-discord-bot
-### Functionalities:
+### Features:
 
 OpenWeatherMap api data fetch with zipcode and country code.
 
