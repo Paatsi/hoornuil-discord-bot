@@ -33,7 +33,7 @@ client.on('messageCreate', (msg) => {
 				.then((parsedWeather) => {
 					if (parsedWeather.cod === '404') {
 						msg.channel.send(
-							'`Postinumeroa ei ole olemassa tai tietoa ei ole saatavilla!`'
+							'Postinumeroa ei ole olemassa tai tietoa ei ole saatavilla!'
 						)
 					} else {
 						const current = new Date()
